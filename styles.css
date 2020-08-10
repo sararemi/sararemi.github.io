@@ -1,11 +1,13 @@
 h1 {
 font-family: Helvetica;
 font-weight: 300;
+font-size: 2em;
 }
 
-p {
+h2 {
 font-family: Helvetica;
 font-weight: 300;
+font-size: 1em;
 }
 
 
@@ -19,14 +21,6 @@ border-radius: 50%;
 text-align: center;
 position: relative;
     
-}
-
-div.a p{
-margin: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
 }
 
 div.b {
@@ -50,4 +44,12 @@ height:200px;
  background-color:yellow;
 position:fixed;
     
+}
+
+div.a h2, div.b h2, div.c h2, div.d h2{
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
