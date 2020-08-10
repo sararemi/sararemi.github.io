@@ -1,3 +1,8 @@
+body {
+padding: 0px 0px 0px 0px;
+background: #cccccc;
+}
+
 h1 {
 font-family: Helvetica;
 font-weight: 300;
@@ -6,8 +11,13 @@ font-size: 2em;
 
 h2 {
 font-family: Helvetica;
+text-transform: uppercase;
 font-weight: 300;
 font-size: 1.5em;
+}
+
+div.sitetitle{
+padding: 10px 10px 10px 20px;
 }
 
 
@@ -26,15 +36,18 @@ position: relative;
 div.b {
 width: 200px;
 height:200px;
- background-color:blue;
-position:fixed;
+background-color:blue;
+color: white;
+position:relative;
     
 }
 div.c {
 width: 200px;
 height:200px;
 background-color:green;
-position:fixed;
+color: white;
+border-radius: 50%;
+position:relative;
 text-align: center;
     
 }
@@ -42,7 +55,7 @@ div.d {
 width: 200px;
 height:200px;
  background-color:yellow;
-position:fixed;
+position:relative;
     
 }
 
