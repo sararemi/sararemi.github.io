@@ -11,8 +11,8 @@ function makeNewPosition(){
     var h = $(window).height();
     var w = $(window).width();
     
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
+    var nh = Math.floor(Math.random() * h-200);
+    var nw = Math.floor(Math.random() * w-200);
     
     return [nh,nw];    
     
