@@ -1,5 +1,11 @@
 h1 {
-font-family: helvetica;
+font-family: Helvetica;
+font-weight: 300;
+}
+
+p {
+font-family: Helvetica;
+font-weight: 300;
 }
 
 
@@ -9,6 +15,7 @@ height:200px;
 background-color:red;
 position:fixed;
 border-radius: 50%;
+text-align: center;
     
 }
 
@@ -22,8 +29,9 @@ position:fixed;
 div.c {
 width: 200px;
 height:200px;
- background-color:green;
+background-color:green;
 position:fixed;
+text-align: center;
     
 }
 div.d {
