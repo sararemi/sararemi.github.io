@@ -13,10 +13,20 @@ div.a {
 width: 200px;
 height:200px;
 background-color:red;
+color: white;
 position:fixed;
 border-radius: 50%;
 text-align: center;
+position: relative;
     
+}
+
+div.a p{
+margin: 0;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
 }
 
 div.b {
