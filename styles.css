@@ -1,5 +1,4 @@
 body {
-padding: 0px 0px 0px 0px;
 background: #cccccc;
 }
 
@@ -20,17 +19,26 @@ div.sitetitle{
 padding: 10px 10px 10px 20px;
 }
 
-
 div.a {
-width: 200px;
-height:200px;
+top: 20%;
+width: 12em;
+height:12em;
 background-color:red;
 color: white;
-position:fixed;
 border-radius: 50%;
 text-align: center;
-position: relative;
-    
+position: fixed;   
+}
+
+div.big {
+width: 100%;
+height: 100%;
+top: 0;
+margin-top: 0;
+left: 0;
+margin-left: 0;
+border-radius: 0;
+background: #0f0;
 }
 
 div.b {
@@ -38,7 +46,7 @@ width: 200px;
 height:200px;
 background-color:blue;
 color: white;
-position:relative;
+position: fixed;
     
 }
 div.c {
@@ -47,16 +55,28 @@ height:200px;
 background-color:green;
 color: white;
 border-radius: 50%;
-position:relative;
 text-align: center;
+position: absolute;
     
 }
 div.d {
-width: 200px;
-height:200px;
- background-color:yellow;
-position:relative;
-    
+top: 70%;
+width: 12em;
+height:12em;
+background-color:yellow;
+position: fixed;    
+}
+
+div.big {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin-top: 0;
+    left: 0;
+    margin-left: 0;
+    border-radius: 0;
+    background: #0f0;
+    transition: all .5s;
 }
 
 div.a h2, div.b h2, div.c h2, div.d h2{
