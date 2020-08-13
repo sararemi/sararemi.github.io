@@ -1,40 +1,101 @@
 $(document).ready(function(){
-    //to animate
-    animateDiv(".a");
-    animateDiv(".b");
-    animateDiv(".c");
-    animateDiv(".d");
+    animateRight($(".a"), 50000);
+    animateLeft($(".b"), 35000);
+    animateDown($(".c"), 45000);
+    animateUp($(".d"), 40000);
     
-    //to grow
-    $(".d").click(function(){
-        $(".d").toggleClass("big");
+//    Hiding the explanation
+    $(".kika").hide();
+    $(".shark").hide();
+    $(".taxonomy").hide();
+    $(".zeitgeist").hide();
+
+//    Showing the explanation
+    $(".a").mouseover(function(){
+        $(".kika").show();
+    });
+    $(".a").mouseout(function(){
+        $(".kika").hide();
     });
     
-    $(".big").click(function(){
-        $(".big").toggleClass("d");
-        $(".big").addClass("d");
-        $(".d").removeClass("big");
-        
+    $(".b").mouseover(function(){
+        $(".zeitgeist").show();
     });
+    $(".b").mouseout(function(){
+        $(".zeitgeist").hide();
+    });
+    
+    $(".c").mouseover(function(){
+        $(".taxonomy").show();
+    });
+    $(".c").mouseout(function(){
+        $(".taxonomy").hide();
+    });
+    
+    $(".d").mouseover(function(){
+        $(".shark").show();
+    });
+    $(".d").mouseout(function(){
+        $(".shark").hide();
+    });
+    
+    
+    
 });
 
-function makeNewPosition(){
-    
-    // Get viewport dimensions (remove the dimension of the div)
-    var h = $(window).height() - 50;
-    var w = $(window).width() - 50;
-    
-    var nh = Math.floor(Math.random() * h);
-    var nw = Math.floor(Math.random() * w);
-    
-    return [nh,nw];    
-    
-}
+function animateRight(targetElement, speed){
+    $(targetElement).css({right:'-50px'});
+    $(targetElement).animate(
+        {
+        'right': $(document).width() + 100
+        }, 
+        { 
+        duration: speed, 
+        complete: function(){
+            animateRight(this, speed);}
+        }
+    );
+};
 
-function animateDiv(myclass){
-    var newq = makeNewPosition();
-    $(myclass).animate({ top: newq[0], left: newq[1] }, 10900,   function(){
-      animateDiv(myclass);        
-    });
-    
+function animateLeft(targetElement, speed){
+    $(targetElement).css({left:'-50px'});
+    $(targetElement).animate(
+        {
+        'left': $(document).width() + 100
+        }, 
+        { 
+        duration: speed, 
+        complete: function(){
+            animateLeft(this, speed);}
+        }
+    );
+};
+
+
+function animateDown(targetElement, speed){
+    $(targetElement).css({top:'-50px'});
+    $(targetElement).animate(
+        {
+        'top': $(document).height() + 100
+        }, 
+        { 
+        duration: speed, 
+        complete: function(){
+            animateDown(this, speed);}
+        }
+    );
+};
+
+function animateUp(targetElement, speed){
+    $(targetElement).css({bottom:'-50px'});
+    $(targetElement).animate(
+        {
+        'bottom': $(document).height() + 100
+        }, 
+        { 
+        duration: speed, 
+        complete: function(){
+            animateUp(this, speed);}
+        }
+    );
 };
