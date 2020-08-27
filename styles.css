@@ -2,6 +2,30 @@ body {
 background: #fff8b2;
 }
 
+.topnav {
+overflow: hidden;
+}
+
+.topnav a {
+float: left;
+font-family: Helvetica;
+font-weight: 300;
+font-size: 2em;
+padding: 14px 16px;
+text-decoration: none;
+color: black;
+
+}
+
+.topnav a:hover {
+text-decoration: underline;
+color: black;
+}
+
+.topnav-right {
+float: right;
+}
+
 h1 {
 font-family: Helvetica;
 font-weight: 300;
@@ -24,31 +48,17 @@ line-height: 1.2em;
 
 div.sitetitle{
 padding: 10px 10px 10px 20px;
+float: left;
 }
 
-/*
-button{
-background: #fff8b2;
-border: 2px solid black;
-border-radius: 50%;
-width: 200px;
-height: 200px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-margin: 4px 2px;
-font-family: Helvetica;
-text-transform: uppercase;
-font-weight: 300;
-font-size: 1.5em;
-transition: all .5s;
+div.navigation{
+float: right;
 }
-*/
 
 div.a {
 position:fixed;
 background: #fff8b2;
-top: 30%;
+top: 10%;
 width: 12em;
 height:12em;
 border: 2px solid black;
@@ -71,7 +81,7 @@ text-align: center;
 div.c {
 position:fixed;
 background: #fff8b2;
-right: 30%;
+top: 50%;
 width: 10em;
 height:10em;
 border: 2px solid black;
@@ -83,7 +93,7 @@ text-align: center;
 div.d {
 position:fixed;
 background: #fff8b2;
-left: 10%;
+top: 30%;
 width: 10em;
 height: 10em;
 border: 2px solid black;
@@ -98,26 +108,11 @@ background: #fff8b2;
 border: 2px solid black;
 width: 30%;
 height: 20%;
-transition: all 5s;
+transition: all 10s;
 padding: 1em;
 z-index: 1;
 
 }
-/*
-
-div.big {
-position: absolute;   
-width: 100% !important;
-height: 100% !important;
-top: 0 !important;
-margin-top: 0 !important;
-left: 0 !important;
-margin-left: 0;
-border-radius: 0;
-background: #0f0;
-transition: all .5s;
-}
-*/
 
 div.a h2, div.b h2, div.c h2, div.d h2{
 margin: 0;

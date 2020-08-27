@@ -1,8 +1,8 @@
 $(document).ready(function(){
     animateRight($(".a"), 50000);
     animateLeft($(".b"), 35000);
-    animateDown($(".c"), 45000);
-    animateUp($(".d"), 40000);
+    animateRight($(".c"), 45000);
+    animateLeft($(".d"), 40000);
     
 //    Hiding the explanation
     $(".kika").hide();
@@ -67,35 +67,6 @@ function animateLeft(targetElement, speed){
         duration: speed, 
         complete: function(){
             animateLeft(this, speed);}
-        }
-    );
-};
-
-
-function animateDown(targetElement, speed){
-    $(targetElement).css({top:'-50px'});
-    $(targetElement).animate(
-        {
-        'top': $(document).height() + 100
-        }, 
-        { 
-        duration: speed, 
-        complete: function(){
-            animateDown(this, speed);}
-        }
-    );
-};
-
-function animateUp(targetElement, speed){
-    $(targetElement).css({bottom:'-50px'});
-    $(targetElement).animate(
-        {
-        'bottom': $(document).height() + 100
-        }, 
-        { 
-        duration: speed, 
-        complete: function(){
-            animateUp(this, speed);}
         }
     );
 };
