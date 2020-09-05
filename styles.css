@@ -4,6 +4,7 @@ background: #fff8b2;
 
 .topnav {
 overflow: hidden;
+background: #fff8b2;
 }
 
 .topnav a {
@@ -30,6 +31,8 @@ h1 {
 font-family: Helvetica;
 font-weight: 300;
 font-size: 2em;
+line-height: 1.25em;
+
 }
 
 h2 {
@@ -43,7 +46,7 @@ p {
 font-family: Helvetica;
 font-weight: 300;
 font-size: 1em;
-line-height: 1.2em;
+line-height: 1.4em;
 }
 
 div.sitetitle{
@@ -54,6 +57,12 @@ float: left;
 div.navigation{
 float: right;
 }
+
+div.about{
+padding: 10px 10px 10px 20px;
+width: 50vw;  
+}
+
 
 div.a {
 position:fixed;
@@ -98,6 +107,18 @@ width: 10em;
 height: 10em;
 border: 2px solid black;
 color: black;
+text-align: center;
+}
+
+div.f {
+position:fixed;
+background: #fff8b2;
+top: 10%;
+width: 10em;
+height:10em;
+border: 2px solid black;
+color: black;
+border-radius: 100%;
 text-align: center;
 }
 

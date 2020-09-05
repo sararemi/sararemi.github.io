@@ -1,8 +1,16 @@
 $(document).ready(function(){
-    animateRight($(".a"), 50000);
-    animateLeft($(".b"), 35000);
-    animateRight($(".c"), 45000);
-    animateLeft($(".d"), 40000);
+//    animateRight($(".a"), 50000);
+//    animateLeft($(".b"), 35000);
+//    animateRight($(".c"), 45000);
+//    animateLeft($(".d"), 40000);
+    animateTest($(".e"));
+    
+function animateRight(targetElement){
+    $(targetElement).css({right:'-50px'});
+    $(targetElement).animate(
+    
+    );
+};
     
 //    Hiding the explanation
     $(".kika").hide();
@@ -43,30 +51,30 @@ $(document).ready(function(){
     
 });
 
-function animateRight(targetElement, speed){
-    $(targetElement).css({right:'-50px'});
-    $(targetElement).animate(
-        {
-        'right': $(document).width() + 100
-        }, 
-        { 
-        duration: speed, 
-        complete: function(){
-            animateRight(this, speed);}
-        }
-    );
-};
-
-function animateLeft(targetElement, speed){
-    $(targetElement).css({left:'-50px'});
-    $(targetElement).animate(
-        {
-        'left': $(document).width() + 100
-        }, 
-        { 
-        duration: speed, 
-        complete: function(){
-            animateLeft(this, speed);}
-        }
-    );
-};
+//function animateRight(targetElement, speed){
+//    $(targetElement).css({right:'-50px'});
+//    $(targetElement).animate(
+//        {
+//        'right': $(document).width() + 100
+//        }, 
+//        { 
+//        duration: speed, 
+//        complete: function(){
+//            animateRight(this, speed);}
+//        }
+//    );
+//};
+//
+//function animateLeft(targetElement, speed){
+//    $(targetElement).css({left:'-50px'});
+//    $(targetElement).animate(
+//        {
+//        'left': $(document).width() + 100
+//        }, 
+//        { 
+//        duration: speed, 
+//        complete: function(){
+//            animateLeft(this, speed);}
+//        }
+//    );
+//};
