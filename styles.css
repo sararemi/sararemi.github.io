@@ -99,12 +99,13 @@ border-radius: 100%;
 text-align: center;
 }
 
-div.d {
+div.shark {
 position:fixed;
 background: #fff8b2;
 top: 30%;
-width: 10em;
-height: 10em;
+width: 20em;
+display: inline;
+/*height: 10em;*/
 border: 2px solid black;
 color: black;
 text-align: center;
@@ -122,7 +123,7 @@ border-radius: 100%;
 text-align: center;
 }
 
-div.kika, div.taxonomy, div.shark, div.zeitgeist {
+div.kika, div.taxonomy, div.zeitgeist {
 position:relative;
 margin: 0 auto;
 background: #fff8b2;

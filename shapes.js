@@ -1,8 +1,8 @@
 $(document).ready(function(){
-    animateRight($(".a"), 50000);
-    animateLeft($(".b"), 35000);
-    animateRight($(".c"), 45000);
-    animateLeft($(".d"), 40000);
+//    animateRight($(".a"), 50000);
+//    animateLeft($(".b"), 35000);
+//    animateRight($(".c"), 45000);
+    animateLeft($(".shark"), 40000);
 //    animateTest($(".e"));
     
 function animateRight(targetElement){
@@ -14,7 +14,7 @@ function animateRight(targetElement){
     
 //    Hiding the explanation
     $(".kika").hide();
-    $(".shark").hide();
+    $(".shark-text").hide();
     $(".taxonomy").hide();
     $(".zeitgeist").hide();
 
@@ -40,11 +40,12 @@ function animateRight(targetElement){
         $(".taxonomy").hide();
     });
     
-    $(".d").mouseover(function(){
-        $(".shark").show();
+    $(".shark").mouseover(function(){
+        $(".shark-text").show().css("transition: height 40s;");
+        
     });
-    $(".d").mouseout(function(){
-        $(".shark").hide();
+    $(".shark").mouseout(function(){
+        $(".shark-text").hide().css("transition: height 40s;");
     });
     
     
