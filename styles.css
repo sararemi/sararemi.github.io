@@ -134,17 +134,17 @@ border-radius: 100%;
 text-align: center;
 }
 
-div.kika, div.taxonomy, div.zeitgeist {
-position:relative;
-margin: 0 auto;
-background: #fff8b2;
-border: 2px solid black;
-width: 30%;
-height: 20%;
-transition: all 10s;
-padding: 1em;
-z-index: 1;
 
+.term-description {
+    position: absolute;;
+    margin: 0 auto;
+    background: #fff8b2;
+    border: 2px solid black;
+    width: 90%;
+    height: 75%;
+    transition: all 10s;
+    padding: 1em;
+    z-index: 1;
 }
 
 div.a h2, div.b h2, div.c h2, div.d h2{
@@ -153,4 +153,16 @@ position: absolute;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%);
+}
+
+.term-description__close-button {
+    font-family: Helvetica;
+    font-weight: 300;
+    font-size: 1em;
+    text-decoration: none;
+    color: black;
+    float: right;
+    background: none;
+    border: none;
+    outline: none;
 }
