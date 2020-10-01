@@ -1,8 +1,8 @@
 $(document).ready(function(){
-//    animateRight($(".a"), 50000);
-//    animateLeft($(".b"), 35000);
-//    animateRight($(".c"), 45000);
-    animateLeft($(".shark"), 40000);
+    animateLeft($(".a"), 50000);
+    animateLeft($(".b"), 35000);
+    animateLeft($(".c"), 45000);
+//    animateLeft($(".shark"), 40000);
 //    animateTest($(".e"));
     
 function animateRight(targetElement){
@@ -52,19 +52,19 @@ function animateRight(targetElement){
     
 });
 
-function animateRight(targetElement, speed){
-    $(targetElement).css({right:'-50px'});
-    $(targetElement).animate(
-        {
-        'right': $(document).width() + 100
-        }, 
-        { 
-        duration: speed, 
-        complete: function(){
-            animateRight(this, speed);}
-        }
-    );
-};
+//function animateRight(targetElement, speed){
+//    $(targetElement).css({right:'-50px'});
+//    $(targetElement).animate(
+//        {
+//        'right': $(document).width() + 100
+//        }, 
+//        { 
+//        duration: speed, 
+//        complete: function(){
+//            animateRight(this, speed);}
+//        }
+//    );
+//};
 
 function animateLeft(targetElement, speed){
     $(targetElement).css({left:'-50px'});
