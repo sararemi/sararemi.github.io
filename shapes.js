@@ -28,9 +28,9 @@ $(document).ready(function() {
     animateLeft($(".c"), 45000);
     animateLeft($(".shark"), 40000);
     
-    $(".term-description").hide(); // Hide the div that will hold the text/titles
     $(".a").click(function(){
-        $(".term-description").toggle();
+        $(".term-description").toggleClass('animate');
+
         if (termDescriptionIsPopulated) {
             cleanupTermDescriptionDiv();
         } else {
@@ -39,7 +39,7 @@ $(document).ready(function() {
     });
 
     $(".b").click(function(){
-        $(".term-description").toggle();
+        $(".term-description").toggleClass('animate');
         if (termDescriptionIsPopulated) {
             cleanupTermDescriptionDiv();
         } else {
@@ -48,7 +48,7 @@ $(document).ready(function() {
     });
 
     $(".c").click(function(){
-        $(".term-description").toggle();
+        $(".term-description").toggleClass('animate');
         if (termDescriptionIsPopulated) {
             cleanupTermDescriptionDiv();
         } else {
@@ -109,7 +109,7 @@ function populateTermDescriptionDiv(term) {
 }
 
 function hideTermDiv() {
-    $(".term-description").toggle();
+    $('.term-description').toggleClass('animate');
     cleanupTermDescriptionDiv();
 }
 

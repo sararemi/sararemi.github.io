@@ -134,17 +134,23 @@ border-radius: 100%;
 text-align: center;
 }
 
-
 .term-description {
-    position: absolute;;
+    position: absolute;
     margin: 0 auto;
     background: #fff8b2;
     border: 2px solid black;
-    width: 90%;
-    height: 75%;
-    transition: all 10s;
     padding: 1em;
     z-index: 1;
+    transform: scale(0);
+    width: 75%;
+    height: 75%;
+    transition: all 2s;
+
+}
+
+.term-description.animate {
+    transform: scale(1);
+    display: block;
 }
 
 div.a h2, div.b h2, div.c h2, div.d h2{
