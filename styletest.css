@@ -1,0 +1,111 @@
+body {
+background: #fff8b2;
+}
+
+.topnav {
+overflow: hidden;
+background: #fff8b2;
+}
+
+.topnav a {
+float: left;
+font-family: Helvetica;
+font-weight: 300;
+font-size: 2em;
+padding: 14px 16px;
+text-decoration: none;
+color: black;
+
+}
+
+.topnav a:hover {
+text-decoration: underline;
+color: black;
+}
+
+.topnav-right {
+float: right;
+}
+
+h1 {
+font-family: Helvetica;
+font-weight: 300;
+font-size: 2em;
+line-height: 1.25em;
+
+}
+
+.kikatitle{
+padding: 50% 0 0 0;
+text-align: center;
+font-family: Helvetica;
+text-transform: uppercase;
+font-weight: 300;
+font-size: 1.5em;
+}
+
+h3 {
+font-family: Helvetica;
+padding-left: 25%;
+width: 50%;
+text-align: center;
+font-weight: 300;
+font-size: 1.5em;
+transition: all 1s;
+}
+
+p {
+font-family: Helvetica;
+font-weight: 300;
+font-size: 1em;
+line-height: 1.4em;
+}
+
+div.sitetitle{
+padding: 10px 10px 10px 20px;
+float: left;
+}
+
+div.navigation{
+float: right;
+}
+
+div.about{
+padding: 10px 10px 10px 20px;
+width: 50vw;  
+}
+
+svg {
+    z-index: -1;
+    position:absolute;
+    display: inline;
+}
+
+@keyframes myanimation
+{
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+
+div.kika{
+z-index: 0;
+width: 15em;
+height: 15em;
+position: relative;
+animation: myanimation 50s;
+animation-iteration-count: infinite;
+transition: all 3s;
+}
+
+div.kikabig{
+height: 100vh;
+width: 100vh;
+transition: all 3s;
+animation-play-state: paused;
+}
+
+

@@ -23,10 +23,10 @@ const terms = {
 }
 
 $(document).ready(function() {
-    animateLeft($(".a"), 50000);
-    animateLeft($(".b"), 35000);
-    animateLeft($(".c"), 45000);
-    animateLeft($(".shark"), 40000);
+    animateLeft($(".a"), 30000);
+    animateLeft($(".b"), 40000);
+    animateLeft($(".c"), 35000);
+    animateLeft($(".shark"), 30000);
     
     $(".a").click(function(){
         $(".term-description").toggleClass('animate');
