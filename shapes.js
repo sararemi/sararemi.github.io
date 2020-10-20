@@ -80,13 +80,46 @@ function animateLeft(targetElement, speed){
     );
 };
 
+var shapes = document.querySelectorAll('.shape');
+
+for (var i = 0; i < shapes.length; i++) {
+  shapes[i].onclick = toggleAnimation;
+  shapes[i].style.webkitAnimationPlayState = 'running';
+}
+
+function toggleAnimation() {
+  var style;
+  for (var i = 0; i < shapes.length; i++) {
+    style = shapes[i].style;
+    if (style.webkitAnimationPlayState === 'running') {
+      style.webkitAnimationPlayState = 'paused';
+    //   document.body.className = 'paused';
+    } else {
+      style.webkitAnimationPlayState = 'running';
+    //   document.body.className = '';
+    }
+  }
+}
+
+
 function pageTransition() {
     var tl = gsap.timeline();
     console.log('page');
 
-    tl.to('ul.transition li', {duration: 0.5, scaleY: 1, transformOrigin: "bottom left", stagger: 0.2});
-    tl.to('.content', {duration: 0.5, opacity: 0})
-    tl.to('ul.transition li', {duration: 0.5, scaleY: 0, transformOrigin: "bottom left", stagger: 0.1, delay: 0.1});
+    // tl.to('div.kika', {
+    //     duration: 3,
+    //     left: 0,
+    // });
+    tl.to('#triangle-link', {
+        duration: 3,
+        x: $(document).width() / 2,
+        y: $(document).height() / 2,
+        scale: 2,
+    });
+    tl.to('#triangle-link svg', {duration: 3, scale: 2,});
+    // tl.to('ul.transition li', {duration: 0.5, scaleY: 1, transformOrigin: "bottom left", stagger: 0.2});
+    // tl.to('.content', {duration: 0.5, opacity: 0})
+    // tl.to('ul.transition li', {duration: 0.5, scaleY: 0, transformOrigin: "bottom left", stagger: 0.1, delay: 0.1});
 
 }
 

@@ -32,10 +32,10 @@ h1 {
   font-weight: 300;
   font-size: 2em;
   line-height: 1.25em;
-
 }
 
-.kikatitle{
+.kikatitle {
+  background-color: pink;
   padding: 50% 0 0 0;
   text-align: center;
   font-family: Helvetica;
@@ -92,6 +92,7 @@ svg {
 }
 
 div.kika{
+  background-color: blue;
   z-index: 0;
   width: 15em;
   height: 15em;
@@ -129,6 +130,6 @@ ul.transition {
 
 ul.transition li {
   transform: scaleY(0);
-  background: white;
+  background: #fff8b2;
   width: 20%;
 }
