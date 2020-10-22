@@ -1,5 +1,10 @@
+/*Desktop CSS*/
+
+@media (min-width: 680px){
+    
 body {
   background: #fff8b2;
+  margin: 0;
 }
 
 .topnav {
@@ -34,21 +39,24 @@ h1 {
   line-height: 1.25em;
 }
 
-.kikatitle {
-  background-color: pink;
-  padding: 50% 0 0 0;
+.kikatitle, .bubbatitle, .zeitgeisttitle {
+/*  background-color: pink;*/
+  padding: 40% 0 0 0;
   text-align: center;
   font-family: Helvetica;
   text-transform: uppercase;
   font-weight: 300;
   font-size: 1.5em;
+  text-decoration: none;
+  color: black;
+}
+
+a {
+    text-decoration:none;
 }
 
 h3 {
   font-family: Helvetica;
-  padding-left: 25%;
-  width: 50%;
-  text-align: center;
   font-weight: 300;
   font-size: 1.5em;
   transition: all 1s;
@@ -71,44 +79,79 @@ div.navigation{
 }
 
 div.about{
-  padding: 10px 10px 10px 20px;
-  width: 50vw;  
+  margin: auto;
+  width: 50vw;
+  padding-top:3em;
 }
 
 svg {
     z-index: -1;
     position:absolute;
     display: inline;
+    background: #fff8b2;
 }
+    
+/*Edit the shapes*/
 
-@keyframes myanimation
-{
-    0% {
-        left: -10%;
-    }
-    100% {
-        left: 105%;
-    }
-}
-
-div.kika{
-  background-color: blue;
+.kika{
+  display: block;
   z-index: 0;
   width: 15em;
   height: 15em;
   position: relative;
   animation: myanimation 50s;
   animation-iteration-count: infinite;
-  transition: all 3s;
+}
+    
+.bubba{
+  display: block;
+  z-index: 0;
+  width: 11em;
+  height: 11em;
+  position: relative;
+  animation: myanimation 35s;
+  animation-iteration-count: infinite;
+}
+    
+.zeitgeist{
+  display: block;
+  z-index: 0;
+  width: 11em;
+  height: 11em;
+  position: relative;
+  animation: myanimation 60s;
+  animation-iteration-count: infinite;
+}
+    
+@keyframes myanimation
+{
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 100%;
+    }
 }
 
-div.kikabig{
-  height: 100vh;
-  width: 100vh;
-  transition: all 3s;
-  animation-play-state: paused;
+
+@keyframes grow {
+  from {
+    transform: scaleX(1) scaleY(1);
+  }
+  to {
+    transform: scaleX(10) scaleY(10);
+  }
 }
 
+.clicked{ 
+  animation: grow 2s;
+  z-index:1;
+/*  background-color: blue;*/
+/*  transition: all 3s;*/
+}
+
+
+/*
 ul {
   list-style: none;
   display: flex;
@@ -133,3 +176,146 @@ ul.transition li {
   background: #fff8b2;
   width: 20%;
 }
+*/
+    
+}
+
+/*Mobile CSS*/
+
+@media (max-width: 680px){
+    
+body {
+  background: #fff8b2;
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background: #fff8b2;
+}
+
+.topnav a {
+  float: left;
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: 1em;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: black;
+
+}
+
+.topnav a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
+.topnav-right {
+  float: right;
+}
+
+h1 {
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.25em;
+}
+
+.kikatitle,.bubbatitle,.zeitgeisttitle {
+/*  background-color: pink;*/
+  padding: 40% 0 0 0;
+  text-align: center;
+  font-family: Helvetica;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: .8em;
+  text-decoration: none;
+  color:black;
+}
+
+a {
+    text-decoration:none;
+}
+
+h3 {
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: 1em;
+  transition: all 1s;
+}
+
+p {
+  font-family: Helvetica;
+  font-weight: 300;
+  font-size: 1em;
+  line-height: 1.4em;
+}
+
+div.sitetitle{
+  padding: 10px 10px 10px 20px;
+  float: left;
+}
+
+div.navigation{
+  float: right;
+}
+
+div.about{
+  margin: auto;
+  width: 80vw;
+  padding-top:3em;
+}
+
+svg {
+    z-index: -1;
+    position:absolute;
+    display: inline;
+    background: #fff8b2;
+}
+
+@keyframes myanimation
+{
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 105%;
+    }
+}
+
+.kika{
+  display: block;
+  z-index: 0;
+  width: 7em;
+  height: 7em;
+  position: relative;
+  animation: myanimation 50s;
+  animation-iteration-count: infinite;
+  transition: all 3s;
+}
+    
+.bubba{
+  display: block;
+  z-index: 0;
+  width: 7em;
+  height: 7em;
+  position: relative;
+  animation: myanimation 30s;
+  animation-iteration-count: infinite;
+  transition: all 3s;
+}
+    
+.zeitgeist{
+  display: block;
+  z-index: 0;
+  width: 7em;
+  height: 7em;
+  position: relative;
+  animation: myanimation 40s;
+  animation-iteration-count: infinite;
+  transition: all 3s;
+}
+    
+}
+
+
